@@ -18,11 +18,26 @@ header{
     background-position: center;
 }
 
+@keyframes logo {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+
+    }
+    to {
+        transform-origin: rotate(360deg);
+    }
+}
+
+
 .logo img{
 	float: left;
 	width: 100px;
     height: auto;
-   
+    animation: logo 4s;
+    animation-iteration-count: 1;
 
 }
 
