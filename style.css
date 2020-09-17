@@ -9,28 +9,26 @@
   
 }
 
+@keyframes logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+
+    }
+}
 
 body{
     margin: 0;
     padding: 0;
     font-family: "montserrat";
-    background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
-   background-size: 4000% 4000%;
-    animation: bganimation 15s infinite;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background.png);
+    background-size: cover;
+    
+    
+   
   }
-
-@keyframes logo {
-    from {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(360deg);
-
-    }
-    to {
-        transform-origin: rotate(360deg);
-    }
-}
 
 
 .logo img{
@@ -60,6 +58,13 @@ body{
     transform: translateX(-50%);
     color: white;
 }
+.textcenter1 {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
 
 ul{
     float: right;
@@ -77,19 +82,16 @@ ul li a{
     color: #fff;
     padding: 5px 20px;
     
-    transition: 1s ease;
+    transition: 0.4s ease;
 }
 
 ul li a:hover{
-    background-color: white;
-    color:black;
-    transition: 1s ease;
+    border: 2px solid white;
 }
 
 ul li.active a {
-    background-color: white;
-    color:black;
-    transition: 1s ease;
+    
+    border: 2px solid white;
 }
 
 
@@ -127,15 +129,5 @@ ul li.active a {
     }
 
 
-    @keyframes bganimation {
-        0%{
-          background-position: 0% 50%;
-        }
-        50%{
-          background-position: 100% 50%;
-        }
-        100%{
-          background-position: 0% 50%;
-        }
-      }
+      
       
